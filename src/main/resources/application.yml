@@ -1,0 +1,25 @@
+spring:
+ #配置数据库
+ datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/springboot?useSSL=false&characterEncoding=utf-8
+   username: root
+   password: hollysys
+#   schema-username: root
+#   schema-password: hollysys
+#   schema: classpath:quartz_tables.sql
+#   initialization-mode: always
+#   separator: $$
+
+ #配置jpa
+ jpa:
+  show-sql: true
+  database: mysql
+  hibernate:
+    ddl-auto: update
+tenantId: '000001'
+#spring:
+# data:
+#  mongodb:
+#    uri: mongodb://192.168.162.128:27017/local?maxPoolSize=256
+
